@@ -1,4 +1,5 @@
 ###爬虫部分
+
 ----
 
 1. 利用requests模块来接收响应的数据包信息（Response[200],成功响应）
@@ -27,16 +28,22 @@ for i in range(24):
 @funct.route('/index')
 def func():
     return render_template('index.html',title='HQUNews',hqunews=hqunews)
+<<<<<<< HEAD
+````
+
 ----
 
 ###flask部分
+
 ----
 
 1. 模块的搭建和组合
 2. 模版的用法
+
 ----
 
 ###nginx反代
+
 ----
 
 1. 配置uWSGI
@@ -60,6 +67,8 @@ chdir = /usr/local/web
 module = wsgi
 chmod-socket = 660
 enable-threads = true
+<<<<<<< HEAD
+````
 
 2. 配置nginx
 
@@ -67,7 +76,8 @@ enable-threads = true
 server {
         listen       80;
         server_name  www.sample.com;
-          
+
+
         location / {
             include  uwsgi_params;
             uwsgi_pass  127.0.0.1:5000;
@@ -77,4 +87,5 @@ server {
             client_max_body_size 35m;
         }
 }
- 
+````
+
