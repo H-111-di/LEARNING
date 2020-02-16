@@ -27,7 +27,7 @@ for i in range(24):
 @funct.route('/index')
 def func():
     return render_template('index.html',title='HQUNews',hqunews=hqunews)
-`
+
 ----
 
 ###flask部分
