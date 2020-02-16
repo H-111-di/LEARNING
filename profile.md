@@ -5,7 +5,7 @@
 2. 利用beautifulsoup来对数据内容进行查找
 3. 观察网页特点截取col_news_list以下部分，然后再针对属性去查找出标题和url
 
-````python
+`
 from flask import render_template
 from funct import funct
 import requests
@@ -27,7 +27,7 @@ for i in range(24):
 @funct.route('/index')
 def func():
     return render_template('index.html',title='HQUNews',hqunews=hqunews)
-
+`
 ----
 
 ###flask部分
