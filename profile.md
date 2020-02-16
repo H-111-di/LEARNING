@@ -28,7 +28,6 @@ for i in range(24):
 @funct.route('/index')
 def func():
     return render_template('index.html',title='HQUNews',hqunews=hqunews)
-<<<<<<< HEAD
 ````
 
 ----
@@ -67,7 +66,6 @@ chdir = /usr/local/web
 module = wsgi
 chmod-socket = 660
 enable-threads = true
-<<<<<<< HEAD
 ````
 
 2. 配置nginx
